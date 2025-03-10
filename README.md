@@ -1,28 +1,28 @@
-# 100 Days of Code: Python Pro Bootcamp - Exercise Files
+# 100 Days of Code: Python Pro Bootcamp - My Exercise Files
 
-Welcome to the exercise files for the **"100 Days of Code: The Complete Python Pro Bootcamp"!** These files are designed to accompany the course and help reinforce the concepts taught through practical exercises.
+Welcome to the repository containing **my personal code files** from the **"100 Days of Code: The Complete Python Pro Bootcamp"!** These files reflect my journey through the course and the solutions I developed for each exercise.
 
 ## Description
 
-This repository contains Python scripts and related resources that align with the daily challenges and lessons from the bootcamp. The files are organized by day, corresponding to the structure of the course.
+This repository contains Python scripts and related resources created during my progress through the bootcamp. Each file corresponds to a specific day's challenge or lesson, showcasing how I applied the concepts taught in the course.
 
 ## How to Use
 
 1. Clone or download this repository.
-2. Navigate to the folder of the day you're working on.
-3. Open the relevant exercise file(s) in your Python IDE or editor.
-4. Follow the instructions within each file, and feel free to experiment with the code!
+2. Navigate to the folder of the day you're interested in.
+3. Explore the code to see my approach to solving the exercises.
+4. Feel free to use, modify, and build upon these files for your learning purposes!
 
 ## License
 
-These exercise files are **free to use** and are distributed under an **open-source license**. You are welcome to use, modify, and share these resources, but please remember to credit the original author(s) and the course when applicable.
+These exercise files are **free to use** and are distributed under an **open-source license**. You are welcome to utilize and share these resources. I ask that you kindly credit me if you use or adapt the files in any public projects.
 
 ## Contribution
 
-If you'd like to contribute to this repository, feel free to submit a pull request. Suggestions, improvements, and bug fixes are always welcome!
+While these files represent my own work from the course, I'd be happy to hear feedback or suggestions for improvement. If you'd like to contribute, feel free to open an issue or submit a pull request.
 
 ---
 
-**Note:** These exercise files are supplementary to the "100 Days of Code: The Complete Python Pro Bootcamp" by Dr. Angela Yu. To get the full experience, consider enrolling in the course on [Udemy](https://www.udemy.com/course/100-days-of-code/).
+**Note:** These code files are based on the exercises from the "100 Days of Code: The Complete Python Pro Bootcamp" by Dr. Angela Yu. To get the full learning experience, I encourage you to enroll in the course on [Udemy](https://www.udemy.com/course/100-days-of-code/).
 
-Happy coding! 🚀
+Happy coding, and enjoy the journey! 🚀
