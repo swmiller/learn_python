@@ -1,7 +1,7 @@
 # Thow away input
 input("What is your name? ")
 
-# Print Hello and the name
+# Prompt the user for their name and immediately print a greeting with it
 print("Hello, " + input("What is your name? "))
 
 # Store the name and use it
