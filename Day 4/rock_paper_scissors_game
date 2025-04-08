@@ -1,0 +1,76 @@
+import random
+
+art = [
+    """
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+""",
+    """
+     _______
+---'    ____)____
+           ______)
+          _______)
+         _______)
+---.__________)
+""",
+    """
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+""",
+]
+
+
+def get_player_choice():
+    print("What do you choose: 1. Rock, 2. Paper, 3. Scissors")
+    while True:
+        try:
+            choice = int(input("Enter the number of your choice: "))
+            if choice in [1, 2, 3]:
+                return choice
+            else:
+                print("Invalid choice. Please select 1, 2, or 3.")
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+
+
+def determine_winner(user_choice, computer_choice):
+    if user_choice == computer_choice:
+        return "It's a draw!"
+    elif (
+        (user_choice == 1 and computer_choice == 3)
+        or (user_choice == 2 and computer_choice == 1)
+        or (user_choice == 3 and computer_choice == 2)
+    ):
+        return "You win!"
+    else:
+        return "You lose!"
+
+
+def main():
+    # Entry point of the program
+    print("Welcome to Rock, Paper, Scissors Game!")
+
+    # Player's choice
+    user_choice = get_player_choice()
+    print(f"\nYour choice:\n{art[user_choice - 1]}")
+
+    # Computer's choice
+    computer_choice = random.randint(1, 3)
+    print(f"Computer's choice:\n{art[computer_choice - 1]}")
+
+    # Determine the winner
+    result = determine_winner(user_choice, computer_choice)
+
+    print(result)
+
+
+if __name__ == "__main__":
+    main()
