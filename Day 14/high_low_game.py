@@ -24,16 +24,11 @@ def get_user_guess():
             print("Invalid input. Please enter a number (1 or 2).")
 
 
-def get_two_options():
-    option_1_number = random.randint(0, len(data) - 1)
-    option_2_number = random.randint(0, len(data) - 1)
-    while option_1_number == option_2_number:
-        option_2_number = random.randint(0, len(data) - 1)
-
-    option_1 = data[option_1_number]
-    option_2 = data[option_2_number]
-
-    return option_1, option_2
+def get_random_option(exclude_option=None):
+    while True:
+        new_option = random.choice(data)
+        if exclude_option is None or new_option != exclude_option:
+            return new_option
 
 
 def print_options(option_1, option_2):
@@ -54,7 +49,8 @@ def main():
     game_over = False
 
     # 1. Game picks two random pieces of data
-    option_1, option_2 = get_two_options()
+    option_1 = get_random_option(None)
+    option_2 = get_random_option(option_1)
 
     while not game_over:
         # 2. Game presents the user with option A and option B
@@ -68,7 +64,8 @@ def main():
             # 5. If correct, the game continues with a new piece of data and awards the user a point
             score += 1
             print(f"Correct! Your score is now {score}.")
-            option_1, option_2 = get_two_options()
+            option_1 = option_2
+            option_2 = get_random_option(option_1)
         else:
             # 6. If incorrect, the game ends and the user is shown their score
             game_over = True
