@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+}
+.container {
+  max-width: 350px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 24px 32px 32px 32px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0001;
+}
+label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+button {
+  margin-top: 24px;
+  width: 100%;
+  padding: 10px;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:hover {
+  background: #1565c0;
+}
+/* Styles for thank_you.html */
+.container.thank-you {
+  margin: 80px auto;
+  padding: 40px 32px;
+  text-align: center;
+}
+h1 {
+  color: #1976d2;
+  margin-bottom: 18px;
+}
+p {
+  font-size: 1.1rem;
+  color: #333;
+}

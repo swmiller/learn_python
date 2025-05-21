@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Form</title>
+    <link rel="stylesheet" href="user_form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="userForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required />
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="text" id="dob" name="dob" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script>
+      document.getElementById("userForm").onsubmit = function (e) {
+        e.preventDefault();
+        const data = {
+          first: document.getElementById("firstName").value,
+          last: document.getElementById("lastName").value,
+          dob: document.getElementById("dob").value,
+        };
+        if (window.pywebview) {
+          window.pywebview.api.submit_form(data);
+          window.location.href = "thank_you.html";
+        } else {
+          alert("pywebview API not available.");
+        }
+      };
+    </script>
+  </body>
+</html>
